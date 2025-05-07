@@ -1,0 +1,41 @@
+{
+  "hullName": "Saha",
+  "hullId": "lks_saha",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/lks_bomber.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 34,
+  "width": 26,
+  "center": [13, 16],
+  "collisionRadius": 20,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 18.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, -0],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    15, -9,
+    15, 9,
+    -16, -0.5
+  ]
+}

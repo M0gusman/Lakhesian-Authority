@@ -1,0 +1,49 @@
+{
+  "variantId": "lks_phyriss_General",
+  "hullId": "lks_phyriss",
+  "displayName": "General",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_pilas",
+        "WS0002": "lks_pilas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lks_huri",
+        "WS0006": "lks_huri"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lks_hyla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "lks_hlys",
+        "WS0004": "lks_hlys"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

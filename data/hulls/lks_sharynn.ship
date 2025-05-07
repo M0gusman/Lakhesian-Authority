@@ -1,0 +1,189 @@
+{
+  "hullName": "Sharynn",
+  "hullId": "lks_sharynn",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/lks_sharynn.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 276,
+  "width": 198,
+  "center": [99, 133],
+  "collisionRadius": 157.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 152,
+  "viewOffset": 0,
+  "builtInMods": [
+    "lakhesis_weaponmod",
+    "lakhesis_generalmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 62.5,
+      "locations": [42, 65]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -90,
+      "locations": [-70, -41]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 90,
+      "locations": [-70, 41]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [4, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -62.5,
+      "locations": [42, -65]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -5.5, 55,
+        4, 46
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -6, -53,
+        3.5, -46
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        57.5, -3.5,
+        76.5, -3.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        57.5, 3.5,
+        76.5, 3.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-132, 22],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-132, -22],
+      "length": 45,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-126, 50.5],
+      "length": 45,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-125.5, -50.5],
+      "length": 45,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -100.5, -9.5,
+    -130.5, -14,
+    -131.5, -26,
+    -121, -42,
+    -126, -54.5,
+    -107.5, -62,
+    -43, -61,
+    -40, -29.5,
+    -24, -30.5,
+    -4, -71,
+    13, -74,
+    22.5, -92.5,
+    50.5, -92.5,
+    60.5, -43.5,
+    124, -41.5,
+    142, -24,
+    103.5, -24,
+    130.5, -0.5,
+    103.5, 24,
+    142, 24,
+    124, 41.5,
+    60.5, 43.5,
+    50.5, 92.5,
+    22.5, 92.5,
+    13, 74,
+    -4, 71,
+    -24, 30.5,
+    -40, 29.5,
+    -43, 61,
+    -107.5, 62,
+    -126, 54.5,
+    -121, 42,
+    -131.5, 26,
+    -130.5, 14,
+    -100.5, 9.5,
+    -126.5, -0
+  ]
+}

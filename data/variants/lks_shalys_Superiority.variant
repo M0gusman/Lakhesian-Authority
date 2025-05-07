@@ -1,0 +1,33 @@
+{
+  "variantId": "lks_shalys_Superiority",
+  "hullId": "lks_shalys",
+  "displayName": "Superority",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "pointdefenseai",
+    "hardenedshieldemitter",
+    "ecm",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_hlys",
+        "WS0002": "lks_hlys",
+        "WS0003": "lks_hlys",
+        "WS0004": "lks_hlys"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "lks_grynn_Superfighter_wing",
+    "lks_hylis_Interceptor_wing"
+  ]
+}

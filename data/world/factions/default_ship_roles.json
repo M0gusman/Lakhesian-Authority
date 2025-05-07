@@ -1,0 +1,63 @@
+{
+
+"combatSmall":{
+		"lks_phylia_Assault":5,
+		"lks_phylia_General":5,
+		"lks_varynn_Assault":5,
+		"lks_varynn_Standard":5,
+	},
+
+
+
+
+"carrierSmall":{
+		"lks_shalys_Bomber":3,
+		"lks_shalys_Standard":4,
+		"lks_shalys_Superiority":3,
+	},
+
+"combatMedium":{
+		"lks_valys_Artillery":4,
+		"lks_valys_Standard":6,
+		"lks_phyriss_Assault":5,
+		"lks_phyriss_General":5,
+	},
+
+
+
+
+	"carrierMedium":{
+		"lks_sharynn_Standard":5,
+		"lks_sharynn_Superiority":5,
+
+	},
+
+
+"combatLarge":{
+		"lks_valeryn_Artillery":4,
+		"lks_valeryn_Standard":6,
+		"lks_phylas_Standard":5,
+		"lks_phylas_Assault":5,
+		"lks_valyra_Artillery":4,
+		"lks_valyra_Standard":6,
+		
+
+	},
+
+
+
+"combatCapital":{
+		"lks_phyran_Assault":5,
+		"lks_phyran_General":4,
+		"lks_phyran_Eigenweapon":1,
+		"lks_varhla_Standard":5,
+		"lks_varhla_Artillery":4,
+		"lks_varhla_Eigenweapon":1,
+		"lks_arathan_Fleetbreaker":10,
+	},
+	
+	"carrierLarge":{
+	"lks_shalynn_Standard":5,
+	"lks_shalynn_Superiority":5,
+	}
+ }

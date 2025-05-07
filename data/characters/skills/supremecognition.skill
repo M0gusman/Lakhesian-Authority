@@ -1,0 +1,18 @@
+{
+	"id":"supremecognition",
+	"governingAptitude":"technology", # why not
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.skills.SupremeCognition$Level1"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.skills.SupremeCognition$Level2"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.skills.SupremeCognition$Level3"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.skills.SupremeCognition$Level4"},
+			]
+		},
+	],
+}

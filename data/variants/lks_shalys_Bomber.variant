@@ -1,0 +1,31 @@
+{
+  "variantId": "lks_shalys_Bomber",
+  "hullId": "lks_shalys",
+  "displayName": "Bomber",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+        "pointdefenseai",
+        "hardenedshieldemitter",
+        "ecm",
+        "expanded_deck_crew"
+    ],
+   "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "lks_hlys",
+            "WS0002": "lks_hlys",
+            "WS0003": "lks_hlys",
+            "WS0004": "lks_hlys"
+        }
+    }],
+  "modules": [],
+  "wings": [
+    "lks_saha_Bomber_wing",
+    "lks_saha_Bomber_wing"
+  ]
+}

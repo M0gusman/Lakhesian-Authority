@@ -1,0 +1,23 @@
+{
+  "variantId": "lks_histrya_Fighter",
+  "hullId": "lks_histrya",
+  "displayName": "Fighter",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_huri",
+        "WS0002": "lks_huri"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

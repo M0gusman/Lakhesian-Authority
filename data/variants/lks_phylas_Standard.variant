@@ -1,0 +1,67 @@
+{
+  "variantId": "lks_phylas_Standard",
+  "hullId": "lks_phylas",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 25,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_sryas",
+        "WS0002": "lks_sryas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lks_hyla",
+        "WS0004": "lks_hyla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lks_juniper",
+        "WS0009": "lks_juniper",
+        "WS0010": "lks_huri"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lks_hlys",
+        "WS0006": "lks_hlys",
+        "WS0007": "lks_hlys"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

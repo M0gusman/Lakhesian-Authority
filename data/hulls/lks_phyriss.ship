@@ -1,0 +1,127 @@
+{
+  "hullName": "Phyriss",
+  "hullId": "lks_phyriss",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/lks_phyriss.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 170,
+  "width": 110,
+  "center": [55, 80],
+  "collisionRadius": 105,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 94,
+  "viewOffset": 0,
+  "builtInMods": [
+    "lakhesis_generalmod",
+    "lakhesis_weaponmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [21, 34]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [21, -34]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [0, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [0, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 180,
+      "locations": [-38, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 235,
+      "angle": 0,
+      "locations": [30, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [57, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-67, 18.5],
+      "length": 52,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-67, -18.5],
+      "length": 52,
+      "width": 21,
+      "angle": -180,
+      "contrailSize": 21,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -65, -6,
+    -66.5, -24.5,
+    -53, -44.5,
+    -20, -33,
+    -2, -48.5,
+    24, -40.5,
+    18.5, -29,
+    84.5, -13.5,
+    82, -7.5,
+    66.5, -6.5,
+    66.5, 6.5,
+    82, 7.5,
+    84.5, 13.5,
+    18.5, 29,
+    24, 40.5,
+    -2, 48.5,
+    -20, 33,
+    -53, 44.5,
+    -66.5, 24.5,
+    -65, 6,
+    -74.5, 0.5
+  ]
+}

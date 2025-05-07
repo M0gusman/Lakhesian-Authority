@@ -1,0 +1,55 @@
+{
+  "variantId": "lks_valyra_Standard",
+  "hullId": "lks_valyra",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 23,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "pointdefenseai",
+    "hardenedshieldemitter",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0014": "lks_juniperlarge"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "lks_ryas",
+                "WS0002": "lks_ryas"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lks_juniper",
+                "WS0006": "lks_juniper",
+                "WS0013": "lks_juniper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lks_hlys",
+                "WS0004": "lks_hlys",
+                "WS0007": "lks_hlys",
+                "WS0008": "lks_hlys",
+                "WS0009": "lks_hlys",
+                "WS0011": "lks_hlys",
+                "WS0012": "lks_hlys"
+            }
+        }
+    ],
+  "modules": [],
+  "wings": []
+}

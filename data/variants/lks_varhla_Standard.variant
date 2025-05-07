@@ -1,0 +1,80 @@
+{
+  "variantId": "lks_varhla_Standard",
+  "hullId": "lks_varhla",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 40,
+  "fluxVents": 42,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter",
+    "missleracks",
+    "heavyarmor"
+  ],
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "lks_heavysryas"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0020": "lks_sryas",
+                "WS0021": "lks_sryas"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "lks_juniperlarge",
+                "WS0013": "lks_juniperlarge"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "lks_prya"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lks_juniper",
+                "WS0008": "lks_juniper",
+                "WS0009": "lks_juniper"
+                
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0018": "lks_juniper",
+						"WS0019": "lks_juniper"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS0002": "lks_hlys",
+                "WS0005": "lks_hlys",
+                "WS0006": "lks_hlys",
+                "WS0007": "lks_hlys",
+                "WS0010": "lks_hlys",
+                "WS0011": "lks_hlys",
+                "WS0014": "lks_hlys",
+                "WS0015": "lks_hlys",
+                "WS0016": "lks_hlys",
+                "WS0017": "lks_hlys",
+                "WS0022": "lks_hlys",
+                "WS0023": "lks_hlys"
+            }
+        }
+    ],
+  "modules": [],
+  "wings": []
+}

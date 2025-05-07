@@ -1,0 +1,43 @@
+{
+  "variantId": "lks_varynn_Standard",
+  "hullId": "lks_varynn",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "targetingunit",
+    "missleracks",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lks_sryas"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "lks_juniper",
+        "WS0002": "lks_juniper"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "lks_huri",
+        "WS0004": "lks_huri"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

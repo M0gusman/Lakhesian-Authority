@@ -1,0 +1,41 @@
+{
+
+        # TYRNN
+	 "tyrnn_fire":
+	[
+		{"file":"sounds/sfx_wpn_guns/mjolnir_fire_03_loud.ogg","pitch":1.00,"volume":0.85},
+		
+	],
+     
+        #ANNIHILA
+
+	"annihila_windup":
+	 [
+			{"file":"sounds/sfx_terrain/campaign_location-gate_windup.ogg", "pitch":1.25,"volume":1.25}
+		],
+     "annihila_fire":
+	 [   
+	     {"file":"sounds/sfx_terrain/campaign_location-gate_explode.ogg", "pitch":1.25,"volume":1.5},
+		 
+	 ],
+	    #VALARYS
+	 "valarys_fire":
+	 [
+	  {"file":"sounds/sfx_systems/emp_emitter_impact_01.ogg","pitch":1.5,"volume":0.85},
+      {"file":"sounds/sfx_systems/emp_emitter_impact_02.ogg","pitch":1.5,"volume":0.85},
+      {"file":"sounds/sfx_systems/emp_emitter_impact_03.ogg","pitch":1.5,"volume":0.85},
+		 
+	 ],
+	 #ANNIHILAONHIT
+	 "annihila_explosion":
+	 [
+	   {"file":"sounds/sfx_impacts/explosion_04.ogg","pitch":1,"volume":1.0},
+	 ],
+}
+
+
+
+
+
+
+

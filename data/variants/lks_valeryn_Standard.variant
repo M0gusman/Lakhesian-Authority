@@ -1,0 +1,64 @@
+{
+  "variantId": "lks_valeryn_Standard",
+  "hullId": "lks_valeryn",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 28,
+  "fluxVents": 28,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "pointdefenseai",
+    "hardenedshieldemitter",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_juniperlarge",
+        "WS0002": "lks_juniperlarge",       
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lks_tyas",
+        "WS0004": "lks_tyas",
+        "WS0005": "lks_tyas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lks_hyla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lks_hlys",
+        "WS0008": "lks_hlys",
+        "WS0009": "lks_hlys",
+        "WS0010": "lks_hlys",
+		"WS0011": "lks_hlys",
+		"WS0014": "lks_hlys",
+        "WS0013": "lks_hlys"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0012": "lks_huri"
+	  }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,54 @@
+{
+  "hullName": "Hylis",
+  "hullId": "lks_hylis",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/lks_interceptor.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 44,
+  "width": 30,
+  "center": [15, 20.5],
+  "collisionRadius": 23.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "pointdefenseai",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, 5.5],
+      "length": 16,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-17.5, -5.5],
+      "length": 16,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -16, -10,
+    19.5, -0,
+    -16, 10
+  ]
+}

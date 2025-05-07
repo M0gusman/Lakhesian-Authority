@@ -1,0 +1,106 @@
+{
+  "hullName": "Varynn",
+  "hullId": "lks_varynn",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/lks_varynn.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 110,
+  "width": 104,
+  "center": [52, 48],
+  "collisionRadius": 69,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 62.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "lakhesis_generalmod",
+    "lakhesis_weaponmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [0, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [0, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [23, 31]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [23, -31]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [33, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-47, 14],
+      "length": 50.5,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-47, -14],
+      "length": 50.5,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -46.5, -21.5,
+    -25.5, -39,
+    -11, -37,
+    0.5, -45.5,
+    26.5, -40.5,
+    26.5, -21.5,
+    60.5, -14,
+    57.5, -8.5,
+    42, -8,
+    42, 8,
+    57.5, 8.5,
+    60.5, 14,
+    26.5, 21.5,
+    26.5, 40.5,
+    0.5, 45.5,
+    -11, 37,
+    -25.5, 39,
+    -46.5, 21.5,
+    -47.5, -0
+  ]
+}

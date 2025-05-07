@@ -1,0 +1,91 @@
+{
+  "hullName": "Grynn",
+  "hullId": "lks_grynn",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/lks_superfighter.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 72,
+  "width": 48,
+  "center": [24, 35.5],
+  "collisionRadius": 41.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 37,
+  "viewOffset": 0,
+  "builtInMods": [
+    "pointdefenseai",
+    "terminator_core",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [5.5, 15]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [5.5, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [20.5, 8]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [20.5, -8]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [35, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30.5, 8],
+      "length": 18.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-30.5, -8],
+      "length": 18.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -30.5, -23,
+    34.5, 0.5,
+    -30.5, 23
+  ]
+}

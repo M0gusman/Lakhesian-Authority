@@ -1,0 +1,49 @@
+{
+  "id": "lks_supercapspinal",
+  "specClass": "projectile",
+  "projectileSpecId": "annihila_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "mountTypeOverride": "BALLISTIC",
+  "everyFrameEffect": "data.scripts.weapons.AnnihilaEveryFrameEffect",
+  "turretSprite": "graphics/weapons/lks_supercapspinal_hardpoint_base.png",
+  "turretGlowSprite": "graphics/weapons/lks_supercapspinal_hardpoint_glow.png",
+  "hardpointSprite": "graphics/weapons/lks_supercapspinal_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/lks_supercapspinal_hardpoint_glow.png",
+  "glowColor": [
+    255,205,14,255
+  ],
+  "turretOffsets": [
+    73.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    119.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "fireSoundOne": "annihila_windup",
+  "fireSoundTwo": "annihila_fire"
+}

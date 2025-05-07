@@ -1,0 +1,42 @@
+{
+  "variantId": "lks_sharynn_Superiority",
+  "hullId": "lks_sharynn",
+  "displayName": "Superiority",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "targetingunit",
+    "ecm",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lks_juniper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_hlys",
+        "WS0002": "lks_hlys",
+        "WS0003": "lks_hlys",
+        "WS0005": "lks_hlys"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "lks_grynn_Superfighter_wing",
+    "lks_grynn_Superfighter_wing",
+    "lks_hylis_Interceptor_wing",
+    "lks_hylis_Interceptor_wing"
+  ]
+}

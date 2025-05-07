@@ -1,0 +1,15 @@
+{
+	"id":"lakhesianauth", # internal id
+	"name":"Lakhesian Authority", # displayed to the player
+	"author":"Mogusman",
+	"version":"1.1c",
+	"description":"A powerful polity led by two hyperintelligent AI.",
+	"gameVersion":"0.97a RC10",
+    "jars":["jars/Lakhesis Monarchy.jar"],
+    "dependencies": [
+	{"id": "lw_lazylib", "name": "LazyLib"},
+	{"id": "MagicLib", "name": "MagicLib"},
+	],
+	"modPlugin":"data.scripts.LakhesisModPlugin"
+  
+}

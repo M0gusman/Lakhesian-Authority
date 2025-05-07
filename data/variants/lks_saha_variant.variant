@@ -1,0 +1,22 @@
+{
+  "variantId": "lks_saha_variant",
+  "hullId": "lks_saha",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_sryas_single"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

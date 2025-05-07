@@ -1,0 +1,63 @@
+{
+  "hullName": "Histrya",
+  "hullId": "lks_histrya",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/lks_fighter.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 34,
+  "width": 30,
+  "center": [15, 16.5],
+  "collisionRadius": 18.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10.5, 4.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [10.5, -4.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, 5],
+      "length": 16.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-12, -5],
+      "length": 16.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -5, -12.5,
+    14.5, -0,
+    -5, 12.5,
+    -15, -0
+  ]
+}

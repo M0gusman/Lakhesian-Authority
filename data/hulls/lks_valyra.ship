@@ -1,0 +1,206 @@
+{
+  "hullName": "Valyra",
+  "hullId": "lks_valyra",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/lks_valyra.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 252,
+  "width": 194,
+  "center": [97, 122],
+  "collisionRadius": 155.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 146.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "lakhesis_weaponmod",
+    "lakhesis_generalmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [92, 36]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [92, -36]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 69.5,
+      "locations": [61, 67],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -69.5,
+      "locations": [61, -67],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 77.5,
+      "locations": [42, 48]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": -78.5,
+      "locations": [42, -48]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": -180,
+      "locations": [-96, -12]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 180,
+      "locations": [-96, 12]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 90,
+      "locations": [-46, 53]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 144,
+      "angle": -90,
+      "locations": [-46, -53]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": 0,
+      "locations": [112, -0]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 0,
+      "locations": [89, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0014",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [51, -0],
+      "renderOrderMod": 15
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-103.5, 32],
+      "length": 79.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-104.5, -55.5],
+      "length": 79.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-104, 55.5],
+      "length": 79.5,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-103.5, -32],
+      "length": 79.5,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -103, -28,
+    -104.5, -56,
+    -98.5, -69.5,
+    -20, -73.5,
+    -7, -57.5,
+    -18, -32.5,
+    -3, -30,
+    31, -88.5,
+    59, -85.5,
+    96, -51.5,
+    100, -25.5,
+    124.5, -8,
+    124.5, 8,
+    100, 25.5,
+    96, 51.5,
+    59, 85.5,
+    31, 88.5,
+    -3, 30,
+    -18, 32.5,
+    -7, 57.5,
+    -20, 73.5,
+    -98.5, 69.5,
+    -104.5, 56,
+    -103, 28,
+    -120.5, -1
+  ]
+}

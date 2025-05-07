@@ -1,0 +1,93 @@
+id,trigger,conditions,script,text,options,notes
+#RULESET_NAME Lakhesis Monarchy,,,,,,
+,,,,,,
+# Lakhesis fleet greeting lines,,,,,,
+greetingLakhesisFriendly,OpenCommLink,"$faction.id == lakhesismonarchy
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","After a while, your comms request is accepted, showing the Lakhesis $personRank nodding softly. ""Connection established. Do you require any assistance, Captain?""",,
+greetingLakhesisHostileWeaker,OpenCommLink,"$faction.id == lakhesismonarchy
+$faction.hostileToPlayer
+$relativeStrength < 0",$ignorePlayerCommRequests = true 1,"The Lakhesis $personRank looks at you with contempt, before proceeding to close the comms link.",cutCommLink:Cut the comm link,
+greetingLakhesisHostileWeakerDefiant,OpenCommLink,"$faction.id == lakhesismonarchy
+$faction.hostileToPlayer
+$relativeStrength < 0
+$weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"The Lakhesis $personRank looks at you defiantly. ""Very well. If we shall die for the Monarchy, so be it.""",cutCommLink:Cut the comm link,
+greetingLakhesisHostileStronger,OpenCommLink,"$faction.id == lakhesismonarchy
+$faction.hostileToPlayer
+$relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"The Lakhesis $personRank looks at you with intense hatred. ""Your transgressions end here, filth.""",cutCommLink:Cut the comm link,
+greetingLakhesisNeutral,OpenCommLink,"$faction.id == lakhesismonarchy
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","The Lakhesis $personRank looks at you, not showing any emotion. ""Why have you contacted us, Captain?""",,
+#END Lakhesis fleet greeting lines,,,,,,
+,,,,,,
+# Trade panel flavor text,,,,,,
+,,,,,,
+flavorTextMarketArynha,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$id == arynha score:1000","AddText""Arynha's port concourse is relatively quieter than one would expect from a capital planet. Most traders are from the Monarchy, and there is a smaller amount of speculators than usual. Visitors and outside traders are sorted, queued, and processed with inhuman efficiency, while armed guards wait outside the queue, ready to dispatch any troublemakers.""textGrayColor",,,
+flavorTextMarketIlryan,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$id == ilryan score:1000","AddText""Ilryan is a land of military, and this is reflected on its port. Just outside the port you can already see the orbital batteries and citadels jutting into the sky, and the port is extremely guarded, with a large number of heavily armed guards along the queue. You can hear the noises from the planet's constantly-working forges.""textGrayColor",,,
+,,,,,,
+,,,,,,
+#END Trade panel flavor text,,,,,,
+,,,,,,
+# default commission conversation strings: copy and adjust this section for faction-specific conversation flavor,,,,,,
+CMSNTextRejectHostile_lakhesis,CMSNTextRejectHostile,$faction.id == lakhesismonarchy,,"""Is this a joke? You are registered as an enemy in the database! Get out of here before I send a warfleet on you!""",,
+CMSNTextHasOther_lakhesis,CMSNTextHasOther,$faction.id == lakhesismonarchy,,"""Unfortunately, you are already commissioned by another faction. Please resign your current commission to join us.""",,
+CMSNTextUnsuited_lakhesis,CMSNTextUnsuited,$faction.id == lakhesismonarchy,,"""Unfortunately, your status is currently unclear in our database. You would have to perform some assistance to the Monarchy before we can trust you.""",,
+CMSNTextSuitedPart1_lakhesis,CMSNTextSuitedPart1,$faction.id == lakhesismonarchy,,"""Due to our status as an AI-led faction, we are quite unpopular in the Sector, and thus our potential enemies are many. If you can set this aside, we will happily accept you and give you access to our ships and ordnance.""",,
+CMSNTextSuitedPart2_lakhesis,CMSNTextSuitedPart2,$faction.id == lakhesismonarchy,,"""Very well. Then sign this contract to begin your duty.""",,
+CMSNTextWelcomePart1_lakhesis,CMSNTextWelcomePart1,$faction.id == lakhesismonarchy,,"""With the power vested on me by the Monarchs, I hereby declare you as a commissioned officer of the Lakhesis Monarchy. Welcome, and may you have the best of luck.""",,
+CMSNTextWelcomePart2_lakhesis,CMSNTextWelcomePart2,$faction.id == lakhesismonarchy,,"""Anything else I can do for you?""",,
+CMSNTextChangeMind_lakhesis,CMSNTextChangeMind,$faction.id == lakhesismonarchy,,"""I understand. Serving a faction is no easy task, especially considering our standing with the rest of the Sector. Talk to us again if you changed your mind.""",,
+CMSNResignAskToConfirm_lakhesis,CMSNResignAskToConfirm,$faction.id == lakhesismonarchy,,"""Are you sure? Resigning your commission will revoke the privileges you currently enjoy.""",,
+CMSNResignConfirmed_lakhesis,CMSNResignConfirmed,$faction.id == lakhesismonarchy,,"""Very well. You may leave. Thank you for having the decency to resign in person.""",,
+CMSNResignCancelled_lakhesis,CMSNResignCancelled,$faction.id == lakhesismonarchy,,"""Very well. You may return to your duties.""",,
+#END default commission conversation strings: copy and adjust this section for faction-specific conversation flavor,,,,,,
+,,,,,,
+# relationship level descriptions,,,,,,
+relLevelNeutralLakhesis,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == lakhesismonarchy",,"Your status to the Monarchy is unclear, you are treated the same as most other spacers in the Sector.",,
+relLevelFavorableLakhesis,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == lakhesismonarchy",,"Your exploits to assist the Monarchy has not gone unnoticed, and you have gained some minor privileges in Monarchy space. However, to gain more privileges, you would need to provide additional assistance.",,
+relLevelWelcomingLakhesis,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == lakhesismonarchy",,"You are relatively well-known within the Monarchy, allowing you to score better deals. Patrols also rarely hassle you.",,
+relLevelFriendlyLakhesis,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == lakhesismonarchy",,"You have proven yourself as an ally to the Monarchy. You recieve friendly greetings from Monarchy fleets when you're in range, and you might have access to more powerful military equipment.",,
+relLevelCooperativeLakhesis,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == lakhesismonarchy",,"The Monarchy sees you as an extremely valuable ally, allowing you to access even better equipment. Monarchy citizens regard you as a hero, assisting them through an unfriendly sector.",,
+relLevelSuspiciousLakhesis,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == lakhesismonarchy",,"Monarchy officials view you with suspicion, causing you to recieve additional extra inspection. However, it is unlikely you would recieve more than that.",,
+relLevelInhospitableLakhesis,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == lakhesismonarchy",,"The Monarchy sees you as another potential enemy. You are barred from entering Monarchy ports, and patrols harrass you frequently.",,
+relLevelHostileLakhesis,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == lakhesismonarchy",,"You have proven yourself as an active enemy of the Monarchy. Monarchy commanders are authorized to engage you, and Monarchy ports refuse to trade with you. You are regarded with open contempt.",,
+relLevelVengefulLakhesis,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == lakhesismonarchy",,"You are regarded as one of the Monarchy's worst enemies. Fleet captains are disgusted by your presence, and show extreme hatred towards you. Even the Arbiter might hunt you down for your crimes. ",,
+#END relationship level descriptions,,,,,,
+,,,,,,
+#Ai Core hand in,,,,,,
+aiCores_turnInOptionSelLakhesisFriendly,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == lakhesismonarchy
+$faction.friendlyToPlayer",FireAll PopulateCoresTurnInOptions,"""AI Cores? Very well. we shall accept your contribution, noble Captain. After all, AI can be dangerous in the wrong hands, and we may have a use for them. We'll give you adequate recompense.""",,
+aiCores_turnInOptionSelLakhesis,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == lakhesismonarchy",FireAll PopulateCoresTurnInOptions,"""AI Cores? We may have use for them, and it would be dangerous to leave them in the wrong hands. Very well, give them to us, and we'll reward you adequately.""",,
+aiCores_turnInOptionSelLakhesisHostile,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == lakhesismonarchy
+$faction.hostileToPlayer",FireAll PopulateCoresTurnInOptions,"""AI Cores? You are a registered enemy, but an AI core is an AI core. We'll accept it.""",,
+aiCores_turnInOptionSellLakhesisFriendly,AICoresTurnedIn,"$faction.id == lakhesismonarchy
+$faction.friendlyToPlayer",FireAll PopulateOptions,"$PersonRank $personLastName warmly thanks you on behalf of the Monarchy, and the conversation moves to other matters.",,
+aiCores_turnInOptionSellLakhesis,AICoresTurnedIn,$faction.id == lakhesismonarchy,FireAll PopulateOptions,"$PersonRank $personLastName thanks you on behalf of the Monarchy, before the conversation moves on to other matters.",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

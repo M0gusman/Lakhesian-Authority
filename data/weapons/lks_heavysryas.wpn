@@ -1,0 +1,50 @@
+{
+  "id": "lks_heavysryas",
+  "specClass": "projectile",
+  "projectileSpecId": "lks_torpedo",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/weapons/torpedo_launcherlarge_turret_base.png",
+  "hardpointSprite": "graphics/weapons/torpedo_launcherlarge_hardpoint_base.png",
+  "turretOffsets": [
+    18,
+    -9,
+    18,
+    9
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    -9,
+    15,
+    9
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 24,
+    "cloudParticleCount": 10,
+    "cloudDuration": 2.5,
+    "cloudRadius": 12,
+    "blowbackParticleCount": 8,
+    "blowbackDuration": 2,
+    "blowbackLength": 18,
+    "blowbackSpread": 10,
+    "particleColor": [
+      245,
+      65,
+      35,
+      120
+    ]
+  },
+  "fireSoundTwo": "reaper_fire"
+}

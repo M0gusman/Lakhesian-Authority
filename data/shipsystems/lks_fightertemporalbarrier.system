@@ -1,0 +1,42 @@
+{
+	"id":"lks_fightertemporalbarrier",
+	"type":"STAT_MOD",
+	"aiType":"TEMPORAL_SHELL",
+
+	"statsScript":"data.scripts.shipsystems.FighterTemporalBarrierStats",
+	
+	"shieldRingColor":[255,255,255,255],
+	"shieldInnerColor":[89.8,72.2,4.3,75],
+	"shieldThicknessMult":1,
+	"shieldFluctuationMult":0,
+
+	"jitterUnderColor":[89.8,72.2,4.3,155],
+    	"jitterUnderCopies":25,
+    	"jitterUnderMinRange":0,
+    	"jitterUnderRange":7,
+    	"jitterUnderRangeRadiusFraction":0,
+
+    	"jitterColor":[89.8,72.2,4.3,55],
+    	"jitterCopies":2,
+    	"jitterMinRange":0,
+    	"jitterRange":5,
+    	"jitterRangeRadiusFraction":0,
+
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.0,
+	
+	#"useSound":"shield_raise",
+	#"loopSound":"beam_heavy_loop",
+	#"deactivateSound":"shield_lower",
+	#"outOfUsesSound":"gun_out_of_ammo",
+	
+	#"useSound":"shield_raise",
+	#"deactivateSound":"shield_lower",
+	# Stian disabled these two because the timing of activate/deactivate did not work together with the loop sound.
+	# Enable them to test the issue. The deactivateSound plays late, after the loopsound has already stopped,
+	# creating a stuttering effect. 
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"gun_out_of_ammo",	
+}

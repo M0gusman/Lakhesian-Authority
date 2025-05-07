@@ -1,0 +1,5 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+lks_histrya_Fighter_wing,lks_histrya_Fighter,"fighter4, fighter, rare_bp, lakhesismonarchy, auto_fighter",0,,6,15,V,4000,500,0,4,FIGHTER,Drone Fighter,10,3000,,,,,,,,,,,,,
+lks_hylis_Interceptor_wing,lks_hylis_Interceptor,"interceptor3, interceptor, rare_bp, lakhesismonarchy, auto_fighter ",0,,4,13,BOX,4000,500,0,5,INTERCEPTOR,Drone Interceptor,7,2000,,,,,,,,,,,,,
+lks_saha_Bomber_wing,lks_saha_Bomber,"bomber6, bomber, rare_bp, lakhesismonarchy, auto_fighter",0,,7,15,V,4000,1000,0,2,BOMBER,Drone Torpedo Bomber,15,4000,,,,,,,,,,,,,
+lks_grynn_Superfighter_wing,lks_grynn_Superfighter,"fighter8, fighter, rare_bp, lakhesismonarchy, auto_fighter",0,,8,25,V,4000,500,0,1,FIGHTER,Drone Superfighter,25,7500,,,,,,,,,,,,,

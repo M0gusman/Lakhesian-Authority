@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jars1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../MagicLib/jars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../MagicLib/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../MagicLib/jars" recursive="false" />
+  </library>
+</component>

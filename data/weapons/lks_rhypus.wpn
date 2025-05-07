@@ -1,0 +1,53 @@
+{
+  "id": "lks_rhypus",
+  "specClass": "projectile",
+  "projectileSpecId": "lksmirv_stage1",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/weapons/missilelarge_turret_base.png",
+  "hardpointSprite": "graphics/weapons/missilelarge_hardpoint_base.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    19.5,
+    6.5,
+    19.5,
+    -6.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    27.5,
+    6.5,
+    27.5,
+    -6.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "hurricane_mirv_fire"
+}

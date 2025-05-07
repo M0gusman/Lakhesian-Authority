@@ -1,0 +1,41 @@
+{
+	"id":"phrya_srm",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/lks_phryamissile.png",
+	"onHitEffect":"data.scripts.weapons.PhryaOnHit",
+	"size":[9,18],	
+	"center":[4.5,9],
+	"collisionRadius":16,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,80,6,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":125, # purely visual
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":600,
+				  "acc":2500,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						#"engineColor":[255,145,75,255],
+						"engineColor":[100,80,6,255],
+						"contrailDuration":0,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":7, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[100,80,6,255],
+				    	"glowSizeMult":2.5,
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":20.0,
+				    "angle":180.0}],
+
+}
+

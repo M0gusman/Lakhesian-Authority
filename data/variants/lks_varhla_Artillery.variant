@@ -1,0 +1,85 @@
+{
+  "variantId": "lks_varhla_Artillery",
+  "hullId": "lks_varhla",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 33,
+  "fluxVents": 36,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter",
+    "missleracks",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lks_rhypus",            
+      }
+    },
+	 {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0020": "lks_ryas",
+        "WS0021": "lks_ryas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lks_tyrnn"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "lks_lyas",
+        "WS0013": "lks_lyas"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+		"WS0018": "lks_livs",
+        "WS0019": "lks_livs",
+        "WS0003": "lks_livs"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lks_juniper",
+        "WS0009": "lks_juniper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+		"WS0002": "lks_hlys",
+        "WS0010": "lks_hlys",
+        "WS0011": "lks_hlys",
+        "WS0005": "lks_hlys",
+        "WS0006": "lks_hlys",
+        "WS0007": "lks_hlys",
+        "WS0014": "lks_hlys",
+        "WS0015": "lks_hlys",
+        "WS0016": "lks_hlys",
+        "WS0017": "lks_hlys",
+        "WS0022": "lks_hlys",
+        "WS0023": "lks_hlys"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

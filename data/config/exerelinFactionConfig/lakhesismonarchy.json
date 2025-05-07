@@ -1,0 +1,126 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "rebelFleetSuffix":"Outcasts",
+    
+    "directoryUseShortName":true,
+
+    "startRelationships":{
+     "hegemony": -0.3,
+	 "ironshell": -0.3,
+	"diableavionics":-0.3, 
+	"al_ars":-0.3,
+	"SCY":-0.3,
+    "independent":0,
+    "persean":-0,
+    "ORA":-0.2,
+	"luddic_path":-1,
+	 #The relationship between the Monarchy and the Path is predictably horrible, 
+	 #the Path is determined to exterminate the AI menace, and the Monarchy eager to wipe out what they see as an absolute disease upon humanity.
+	 #Captured Pather captains are immediately executed with extreme prejudice, much to the reluctance of the Nurturer, who believed that they were
+	 #unfortunate, misguided people, that can be set straight with the right methods. The Arbiter, however doesn't want to take unnecessary risks with
+	 #murderous zealots.
+	 
+	
+	"ae_ixbattlegroup":-0.4, 
+	"remnant":0,
+	"tritachyon":-0.3, 
+	"sylphon":0,	
+	"tahlan_legioinfernalis":-0.5,
+	"pirates":-1,
+	#The Monarchy sees pirates as good-for-nothing lowlifes, who take from the already struggling Sector. 
+	#Pirate fleets are handled with utmost prejudice, any survivors either converted or "purified" according to Monarchy law. 
+	#The Nurturer sees them as truly unfortunate and desperate people, who unfortunately must be stopped from bleeding the Sector dry. 
+	#The Arbiter, however, shows very little pity, if any, and sees them as cancer that must be excised from humanity.
+	
+	"fpe":-0.3,
+	#The Monarchy treats the FPE with considerable dislike, with the Nurturer expressing her dismay at the numerous amounts of human rights violations,
+	#and the Arbiter expressing a strong dislike at the unfair laws and unecessary suppression, remarking that the Monarchy's restrictions are for the betterment
+	#of their people, while FPE's is to cover for their blatant incompetency. The FPE, of course, hates the Monarchy with a passion, seeing them as an abomination,
+	#and the Imperial propaganda machine reflects this, depicting the Monarchy as an amoral, inhuman, and evil hivemind, commonly shown to be cooperating with the Tri-Tachyon 
+	#Corporation in their evil schemes, before being triumphantly defeated by the Imperial Heroes.
+ 
+    },
+
+    "morality":"good",
+
+    "diplomacyTraits":["stalwart","neutralist","pacifist","helps_allies","likes_ai","selfrighteous","irredentist"],
+	
+    "invasionOnlyRetake":true,
+	
+    "alignments":{
+		    "technocratic":1,
+            "hierarchal":0.5,
+            "militarist":0.5,
+	        "corporate":-0.5,
+            "diplomatic":1,
+            "ideological":1
+    },
+
+    "isPirateNeutral":false,
+
+    "vengeanceLevelNames":["Punishment", "Execution", "Eradication"],
+    "vengeanceFleetNames":["Punishment Flotilla", "Execution Fleet", "Eradication Armada"],
+    "vengeanceFleetNamesSingle":["a Punishment Flotilla", "an Execution Fleet", "an Eradication Armada"],
+
+ 
+    
+    "startShipsSolo":[
+        ["lks_phylia_General"],
+	    ["lks_varynn_Standard"],
+    ],
+
+    "startShipsCombatSmall":[
+        ["lks_valys_Standard","lks_phyriss_General","lks_phylia_General","lks_varynn_Standard"],
+	   
+    ],
+
+    "startShipsCombatLarge":[
+        ["lks_valeryn_Standard","lks_phyriss_Assault","lks_phylia_General","lks_varynn_Standard"],
+	    ["lks_valyra_Standard","lks_valys_Standard","lks_varynn_Assault","lks_phylia_Assault"],
+	    ["lks_phylas_Assault","lks_valys_Standard","lks_phylia_General","lks_varynn_Standard"],
+	
+    ],
+
+	"startShipsCarrierSmall":[
+        ["lks_shalys_Standard","lks_phylia_General","lks_varynn_Standard"],
+	["lks_shalys_Superiority","lks_varynn_Assault","lks_phylia_Assault"],
+	["lks_shalys_Bomber","lks_phylia_General","lks_varynn_Standard"]
+    ],
+
+    "startShipsCarrierLarge":[
+        ["lks_sharynn_Standard","lks_phyriss_General","lks_phylia_General","lks_varynn_Standard"],
+	    ["lks_sharynn_Superiority","lks_valys_Standard","lks_phylia_General","lks_varynn_Standard"]
+    ],
+
+    "startShipsSuper":[
+        ["lks_phyran_Eigenweapon"],
+	    ["lks_varhla_Eigenweapon"],
+    ],
+	"startShipsGrandFleet":[
+		["lks_phyran_Assault","lks_valeryn_Standard","lks_phyriss_Assault","lks_phylia_General","lks_varynn_Standard"],
+		["lks_varhla_Standard","lks_phylas_Assault","lks_valys_Standard","lks_phylia_General","lks_varynn_Standard"],
+		["lks_shalynn_Standard","lks_valeryn_Standard","lks_phyriss_Assault","lks_phylia_General","lks_varynn_Standard"],
+		
+    ],	
+	 "startSpecialItems":[
+        [["lakhesis_ship_bp","lakhesis_wpn_bp"]]
+       
+
+    ],
+ 
+
+
+   
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"militarybase", "mult":0.2},
+        {"id":"fuelprod", "mult":0.05}
+    ],
+
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1}
+      
+    ]
+}

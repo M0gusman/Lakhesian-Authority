@@ -1,0 +1,35 @@
+{
+    "plugins":{ 
+		    "AnnihilaPierce":"data.scripts.plugins.AnnihilaProjectilePierce",
+    },
+
+    "graphics":{
+		"characters":{
+				"lksnurturer":"graphics/portraits/characters/lks_nurturer.png",
+				"lksarbiter":"graphics/portraits/characters/lks_arbiter.png",
+			},
+			"blueprint_packages":{
+			"lakhesis_ship_bp": "graphics/icons/cargo/lakhesis_bp.png",
+			"lakhesis_wpn_bp":  "graphics/icons/cargo/lakhesis_bp.png",
+			},
+			
+        "misc":{            		
+        },	
+        
+        "terrain":{
+        },
+        
+        "illustrations":{
+		
+		},
+			
+		"intel":{
+		},
+		
+	},
+    	"designTypeColors":{
+		"Lakhesis Monarchy":[200,160,3,255],
+		"Lakhesis Eigenweapon":[55, 160, 125, 255],
+		"Arbiter's Design":[255,255,255,255],
+	},
+}

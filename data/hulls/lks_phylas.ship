@@ -1,0 +1,162 @@
+{
+  "hullName": "Phylas",
+  "hullId": "lks_phylas",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/lks_phylas.png",
+  "style": "LAKHESIS_MONARCHY",
+  "height": 274,
+  "width": 178,
+  "center": [89, 129],
+  "collisionRadius": 162,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 154,
+  "viewOffset": 0,
+  "builtInMods": [
+    "lakhesis_weaponmod",
+    "lakhesis_generalmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [62, -34]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": -0,
+      "locations": [62, 34]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 90,
+      "locations": [-18, 37]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": -90,
+      "locations": [-19, -37]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [-69, 39]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [-69, -39]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 180,
+      "locations": [-89, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [67, -0],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 0,
+      "locations": [24, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 255,
+      "angle": 0,
+      "locations": [108, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-125.5, 21],
+      "length": 63,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-125.5, -21],
+      "length": 63,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    }
+  ],
+  "bounds": [
+    -115.5, -10.5,
+    -125.5, -12.5,
+    -126, -25.5,
+    -119.5, -41,
+    -64, -56.5,
+    -50.5, -51,
+    -51.5, -60,
+    -32.5, -79.5,
+    -12, -66,
+    67, -44,
+    68.5, -25.5,
+    82.5, -19,
+    117.5, -14.5,
+    143, -0.5,
+    117.5, 14.5,
+    82.5, 19,
+    68.5, 25.5,
+    67, 44,
+    -12, 66,
+    -32.5, 79.5,
+    -51.5, 60,
+    -50.5, 51,
+    -64, 56.5,
+    -119.5, 41,
+    -125.5, 30.5,
+    -125.5, 12.5,
+    -115.5, 10.5,
+    -123, -0.5
+  ]
+}

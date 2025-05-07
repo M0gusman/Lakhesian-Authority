@@ -1,0 +1,21 @@
+{
+	"id":"annihila_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"NONE",
+	"collisionClassByFighter":"NONE",
+	"length":250.0,
+	"hitGlowRadius":150,
+	"width":24.0,
+	"fadeTime":0.5,
+	"fringeColor":[100,80,6,255],
+	#"coreColor":[255,225,175,225],
+	"coreColor":[255,255,255,200],
+	"glowColor":[100,80,6,255],
+	"glowRadius":60,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"
+	#"bulletSprite":"graphics/missiles/shell_round_lrg.png"
+}

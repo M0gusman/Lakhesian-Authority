@@ -1,0 +1,50 @@
+{
+  "id": "lks_tyrnn",
+  "specClass": "projectile",
+  "projectileSpecId": "tyrnn_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 1200,
+  "turretSprite": "graphics/weapons/hecannonlarge_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/hecannonlarge_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/hecannonlarge_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/hecannonlarge_hardpoint_glow.png",
+  "glowColor": [
+    100,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    46,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    50,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 100,
+    "spread": 5,
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "particleDuration": 0.25,
+    "particleCount": 25,
+    "particleColor": [
+      100,
+      255,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "tyrnn_fire"
+}
