@@ -26,7 +26,7 @@ Valarys Multi-Pulse,lks_supercap_pd,6,,20000,1200,,800,100,50,100,50,,,,FRAGMENT
 Artyhurn Macro-Driver,lks_supercapspinal,6,,200000,2000,,6000,3000,15,0,50,,,,ENERGY,6500,,4,21,1,,,,,,,6500,,,1000,,,"STRIKE,SYSTEM","energy20, strike10, lks_supercapspinal, lks_supercapspinal",,Lakhesis Eigenweapon,,Strike,,,,,"The projectile passes through enemies, dealing damage, causing explosions, and raising the target's hard flux along the way.",,,,,
 Sryas Torpedo Pod (Single),lks_sryas_single,1,,900,1350,,2500,,5,40,6,1,,,HIGH_EXPLOSIVE,,,0.5,9.5,1,,,,,,,600,200,10,700,,,"STRIKE, SYSTEM",missile5,,Lakhesis Monarchy,,Anti Armor,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#DECORATIVE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

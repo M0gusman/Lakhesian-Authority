@@ -4,12 +4,12 @@
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/lks_phylia.png",
   "style": "LAKHESIS_MONARCHY",
-  "height": 96,
-  "width": 78,
-  "center": [39, 47],
-  "collisionRadius": 57.5,
+  "height": 120,
+  "width": 98,
+  "center": [49, 59.5],
+  "collisionRadius": 65.5,
   "shieldCenter": [0, -0],
-  "shieldRadius": 55,
+  "shieldRadius": 61.5,
   "viewOffset": 0,
   "builtInMods": [
     "lakhesis_generalmod",
@@ -20,42 +20,51 @@
       "id": "WS0001",
       "size": "MEDIUM",
       "type": "HYBRID",
-      "mount": "HARDPOINT",
-      "arc": 25,
+      "mount": "TURRET",
+      "arc": 360,
       "angle": 0,
-      "locations": [39, -0]
+      "locations": [1.5, -0]
     },
     {
       "id": "WS0002",
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 250,
-      "angle": 180,
-      "locations": [-20, -0]
+      "arc": 160,
+      "angle": 80,
+      "locations": [-2.5, 24]
     },
     {
       "id": "WS0003",
       "size": "SMALL",
       "type": "ENERGY",
-      "mount": "HARDPOINT",
-      "arc": 25,
-      "angle": -0,
-      "locations": [12, 22]
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -80,
+      "locations": [-2.5, -24]
     },
     {
       "id": "WS0004",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 25,
+      "arc": 5,
       "angle": 0,
-      "locations": [12, -22]
+      "locations": [20.5, 27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [20.5, -27]
     }
   ],
   "engineSlots": [
     {
-      "location": [-45, 16.5],
+      "location": [-46.5, 14],
       "length": 36,
       "width": 17,
       "angle": 180,
@@ -64,7 +73,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-45, -16.5],
+      "location": [-46, -14],
       "length": 36,
       "width": 17,
       "angle": 180,
@@ -74,20 +83,26 @@
     }
   ],
   "bounds": [
-    -37.5, -7,
-    -45, -9,
-    -45, -22.5,
-    -4, -35.5,
-    16.5, -31.5,
-    14.5, -17.5,
-    47, -13.5,
-    47, 13.5,
-    14.5, 17.5,
-    16.5, 31.5,
-    -4, 35.5,
-    -45, 22.5,
-    -45, 9,
-    -37.5, 7,
-    -46.5, -0
+    -16.5, -6.5,
+    -57, -13.5,
+    -33, -38.5,
+    -6.5, -47.5,
+    16.5, -35,
+    16.5, -21.5,
+    56, -15.5,
+    54.5, -10,
+    21.5, -8,
+    60, 0,
+    60, -0,
+    21.5, 8,
+    54.5, 10,
+    56, 15.5,
+    16.5, 21.5,
+    16.5, 35,
+    -6.5, 47.5,
+    -33, 38.5,
+    -57, 13.5,
+    -16.5, 6.5,
+    -28, -0
   ]
 }
