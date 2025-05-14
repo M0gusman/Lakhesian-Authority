@@ -6,8 +6,18 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.plugins.ShipSystemStatsScript;
 
-public class TemporalDriveStats extends BaseShipSystemScript {
+import java.util.HashMap;
 
+public class TemporalDriveStats extends BaseShipSystemScript {
+	private static HashMap<HullSize, Float> hullsize = new HashMap();
+	static {
+		hullsize.put(HullSize.DEFAULT, 0.25f);
+		hullsize.put(HullSize.FIGHTER, 0.25f);
+		hullsize.put(ShipAPI.HullSize.FRIGATE, 0.25f);
+		hullsize.put(ShipAPI.HullSize.DESTROYER, 0.5f);
+		hullsize.put(ShipAPI.HullSize.CRUISER, 0.75f);
+		hullsize.put(ShipAPI.HullSize.CAPITAL_SHIP, 1f);
+	}
 	public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
 		if (state == ShipSystemStatsScript.State.OUT) {
 			stats.getMaxSpeed().unmodify(id); // to slow down ship to its regular top speed while powering drive down
@@ -16,13 +26,11 @@ public class TemporalDriveStats extends BaseShipSystemScript {
 			stats.getAcceleration().modifyFlat(id, 50f);
 			stats.getMaxTurnRate().modifyFlat(id, 50f * effectLevel);
 			stats.getTurnAcceleration().modifyFlat(id, 50f * effectLevel);
-			stats.getTimeMult().modifyFlat(id, 3f);
 		}
 	}
 	public void unapply(MutableShipStatsAPI stats, String id) {
 		stats.getMaxSpeed().unmodify(id);
 		stats.getAcceleration().unmodify(id);
-		stats.getTimeMult().unmodify(id);
 		stats.getMaxTurnRate().unmodify(id);
 		stats.getTurnAcceleration().unmodify(id);
 	}
@@ -32,9 +40,6 @@ public class TemporalDriveStats extends BaseShipSystemScript {
 			return new StatusData("increased engine power", false);
 		}
 		if (index == 1) {
-			return new StatusData("timeflow accelerated", false );
-		}
-		if (index == 2) {
 			return new StatusData("increased maneuverablility", false);
 		}
 		return null;

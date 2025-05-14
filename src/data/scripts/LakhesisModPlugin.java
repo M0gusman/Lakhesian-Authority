@@ -74,7 +74,7 @@ public class LakhesisModPlugin extends BaseModPlugin {
         SectorEntityToken arynha = system.getEntityById("arynha");
         // The Arbiter's Retinue
        PersonAPI arbiter =  MagicCampaign.createCaptainBuilder(
-               "lakhesismonarchy"
+               "lakhesianauth"
                ).setFirstName("The")
                .setLastName("Arbiter")
                .setGender(Gender.MALE)
@@ -89,7 +89,7 @@ public class LakhesisModPlugin extends BaseModPlugin {
                .create();
        CampaignFleetAPI fleet =  MagicCampaign.createFleetBuilder()
                .setFleetName("The Arbiter's Retinue")
-               .setFleetFaction("lakhesismonarchy")
+               .setFleetFaction("lakhesianauth")
                .setFleetType(FleetTypes.TASK_FORCE)
                .setAssignment(FleetAssignment.DEFEND_LOCATION)
                .setAssignmentTarget(arynha)
@@ -112,7 +112,7 @@ public class LakhesisModPlugin extends BaseModPlugin {
 
             PersonAPI nurturer = Global.getFactory().createPerson();
             nurturer.setId("nurturer");
-            nurturer.setFaction("lakhesismonarchy");
+            nurturer.setFaction("lakhesianauth");
             nurturer.setGender(Gender.FEMALE);
             nurturer.setImportance(PersonImportance.VERY_HIGH);
             nurturer.setRankId(Ranks.FACTION_LEADER);
@@ -148,7 +148,7 @@ public class LakhesisModPlugin extends BaseModPlugin {
         if (ilryan != null) {
             PersonAPI arbiter = Global.getFactory().createPerson();
             arbiter.setId("arbiter");
-            arbiter.setFaction("lakhesismonarchy");
+            arbiter.setFaction("lakhesianauth");
             arbiter.setGender(Gender.MALE);
             arbiter.setImportance(PersonImportance.VERY_HIGH);
             arbiter.setRankId(Ranks.FACTION_LEADER);

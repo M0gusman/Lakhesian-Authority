@@ -7,13 +7,14 @@
   "height": 122,
   "width": 92,
   "center": [46, 62],
-  "collisionRadius": 70.5,
+  "collisionRadius": 79,
   "shieldCenter": [0, -0],
-  "shieldRadius": 66,
+  "shieldRadius": 75,
   "viewOffset": 0,
   "builtInMods": [
     "lakhesis_generalmod",
-    "lakhesis_weaponmod"
+    "lakhesis_weaponmod",
+	"lks_timeflow_guard"
   ],
   "weaponSlots": [
     {
@@ -39,8 +40,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 208,
-      "angle": 62,
+      "arc": 135,
+      "angle": 67.5,
       "locations": [34, 24]
     },
     {
@@ -48,8 +49,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 208,
-      "angle": -62,
+      "arc": 135,
+      "angle": -67.5,
       "locations": [34, -24]
     },
     {
@@ -57,14 +58,14 @@
       "size": "MEDIUM",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 25,
+      "arc": 5,
       "angle": 0,
       "locations": [36, -0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-48.5, 21],
+      "location": [-51.5, 21],
       "length": 50.5,
       "width": 25,
       "angle": 180,
@@ -73,7 +74,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-48.5, -21],
+      "location": [-51.5, -21],
       "length": 50.5,
       "width": 25,
       "angle": -180,

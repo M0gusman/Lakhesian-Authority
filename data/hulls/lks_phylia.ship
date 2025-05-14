@@ -7,13 +7,14 @@
   "height": 120,
   "width": 98,
   "center": [49, 59.5],
-  "collisionRadius": 65.5,
+  "collisionRadius": 74.5,
   "shieldCenter": [0, -0],
-  "shieldRadius": 61.5,
+  "shieldRadius": 69,
   "viewOffset": 0,
   "builtInMods": [
     "lakhesis_generalmod",
-    "lakhesis_weaponmod"
+    "lakhesis_weaponmod",
+	"lks_timeflow_strike"
   ],
   "weaponSlots": [
     {
@@ -64,7 +65,7 @@
   ],
   "engineSlots": [
     {
-      "location": [-46.5, 14],
+      "location": [-49.5, 14],
       "length": 36,
       "width": 17,
       "angle": 180,
@@ -73,7 +74,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-46, -14],
+      "location": [-49.5, -14],
       "length": 36,
       "width": 17,
       "angle": 180,

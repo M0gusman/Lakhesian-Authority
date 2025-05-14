@@ -7,21 +7,28 @@
   "height": 204,
   "width": 148,
   "center": [74, 93.5],
-  "collisionRadius": 113,
+  "collisionRadius": 125.5,
   "shieldCenter": [0, -0],
-  "shieldRadius": 110.5,
+  "shieldRadius": 121,
   "viewOffset": 0,
   "builtInMods": [
     "lakhesis_generalmod",
-    "lakhesis_weaponmod"
+    "lakhesis_weaponmod",
+	"lks_timeflow_strike"
   ],
+  "builtInWeapons": {
+    "WS0008": "lks_strikedd_deco1_left",
+    "WS0009": "lks_strikedd_deco1_right",
+    "WS0010": "lks_strikedd_deco2_right",
+    "WS0011": "lks_strikedd_deco2_left"
+  },
   "weaponSlots": [
     {
       "id": "WS0001",
       "size": "MEDIUM",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 25,
+      "arc": 5,
       "angle": 0,
       "locations": [51.5, 23]
     },
@@ -30,7 +37,7 @@
       "size": "MEDIUM",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 25,
+      "arc": 5,
       "angle": -0,
       "locations": [51.5, -23]
     },
@@ -39,8 +46,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 180,
-      "angle": 121,
+      "arc": 140,
+      "angle": 120,
       "locations": [-25.5, 47]
     },
     {
@@ -67,8 +74,8 @@
       "size": "SMALL",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 235,
-      "angle": 57,
+      "arc": 140,
+      "angle": 65,
       "locations": [16.5, 36]
     },
     {
@@ -76,14 +83,50 @@
       "size": "SMALL",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 235,
-      "angle": -57,
+      "arc": 140,
+      "angle": -65,
       "locations": [16.5, -36]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 0,
+      "locations": [51.5, 35]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": -0,
+      "locations": [51.5, -35]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": -0,
+      "locations": [47.5, -12]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 25,
+      "angle": 0,
+      "locations": [47.5, 12]
     }
   ],
   "engineSlots": [
     {
-      "location": [-71, 19],
+      "location": [-74.5, 19],
       "length": 52,
       "width": 21,
       "angle": 180,
@@ -92,7 +135,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-71, -19],
+      "location": [-74.5, -19],
       "length": 52,
       "width": 21,
       "angle": 180,

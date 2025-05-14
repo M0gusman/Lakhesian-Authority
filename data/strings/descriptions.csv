@@ -28,6 +28,7 @@ lks_phyran,SHIP,"A battlecruiser with powerful frontal firepower, the Phyran is 
 lks_varhla,SHIP,"A battleship with powerful armament and wide weapon coverage, the Varhla is tough, powerful, and intimidating. Capable of duelling against other capital ships, it is a force to be reckoned with.",,,
 lks_shalynn,SHIP,"A fleetcarrier with great number of fighter bays and adequate supportive firepower, the Shalynn is capable of enormous power projection. With the Remote Temporal Barrier, the already powerful 6 bays can potentially be deadly for an enemy ship or fighter squadron.",,,
 lks_arathan,SHIP,"A massive ship, with a terrifying amount of weaponry, and extremely tough armor. This ship is piloted by an instance of The Arbiter, one of Lakhesis' monarch. It is designed for superiority in the battlespace, capable of potentially slaughter entire fleets on its own. This ship, along with a massive fleet, stands guard in the Lakhesis system, awaiting to unleash its fury upon any unfortunate interloper.",,,
+lks_seiries,SHIP,,,,
 # Fighters,,,,,
 lks_histrya,SHIP,"A general purpose fighter, capable of either defeating enemy strikecraft or harrassing larger vessels.",,,
 lks_hylis,SHIP,"A cheap, but powerful interceptor, this drone is exceptionally powerful as a point-defense solution.",,,

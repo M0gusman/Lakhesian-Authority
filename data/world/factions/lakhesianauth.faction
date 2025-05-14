@@ -1,8 +1,8 @@
 {
-	id:"lakhesismonarchy",
-	"color":[200,160,3,255],
-	"displayName":"Lakhesis Monarchy",
-	"displayNameWithArticle":"the Lakhesis Monarchy",
+	id:"lakhesianauth",
+	"color":[223,224,234,255],
+	"displayName":"Lakhesian Authority",
+	"displayNameWithArticle":"the Lakhesian Authority",
 	"displayNameIsOrAre":"is",
 	"logo":"graphics/factions/lakhesis_flag.png",
 	"crest":"graphics/factions/lakhesis_crest.png",
@@ -114,17 +114,17 @@
 		],
 	},
 	"factionDoctrine":{
-		"warships":3,
-		"carriers":3,
+		"warships":4,
+		"carriers":2,
 		"phaseShips":1,
 		
 		"officerQuality":3,
-		"shipQuality":4,
-		"numShips":5,
+		"shipQuality":3,
+		"numShips":3,
 		
-		"shipSize":3,
+		"shipSize":2,
 		
-		"aggression":2,
+		"aggression":3,
 		
 		"combatFreighterProbability":0,      				# instead of some portion of the freighters in a fleet
 		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup

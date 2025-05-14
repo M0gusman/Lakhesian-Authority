@@ -21,7 +21,7 @@ public class lakhesisgen implements SectorGeneratorPlugin {
         FactionAPI indep = sector.getFaction("independent");
         FactionAPI diktat = sector.getFaction("sindrian_diktat");
         FactionAPI persean = sector.getFaction("persean");
-        FactionAPI lakhesis = sector.getFaction("lakhesismonarchy");
+        FactionAPI lakhesis = sector.getFaction("lakhesianauth");
         FactionAPI remnant = sector.getFaction("remnant");
         
         lakhesis.setRelationship(path.getId(), -1f);
@@ -56,7 +56,7 @@ public class lakhesisgen implements SectorGeneratorPlugin {
     }
 
     public void generate(SectorAPI sector) {
-        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("lakhesismonarchy");
+        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("lakhesianauth");
         initFactionRelationships(sector);
         (new Lakhesis()).generate(sector);
     }

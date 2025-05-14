@@ -4,12 +4,12 @@
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/lks_valeryn.png",
   "style": "LAKHESIS_MONARCHY",
-  "height": 278,
-  "width": 200,
-  "center": [100, 138.5],
-  "collisionRadius": 148,
+  "height": 290,
+  "width": 206,
+  "center": [103, 143.5],
+  "collisionRadius": 178,
   "shieldCenter": [0, -0],
-  "shieldRadius": 143,
+  "shieldRadius": 165,
   "viewOffset": 0,
   "builtInMods": [
     "lakhesis_generalmod",
@@ -22,8 +22,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 200,
-      "angle": 78.5,
-      "locations": [-3.5, 46],
+      "angle": 59.5,
+      "locations": [-14.5, 49],
       "renderOrderMod": 5
     },
     {
@@ -32,8 +32,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 200,
-      "angle": -78.5,
-      "locations": [-3.5, -46],
+      "angle": -59.5,
+      "locations": [-14.5, -49],
       "renderOrderMod": 5
     },
     {
@@ -41,55 +41,55 @@
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 155,
-      "angle": 75,
-      "locations": [38, 32]
+      "arc": 220,
+      "angle": 0,
+      "locations": [77.5, -0]
     },
     {
       "id": "WS0004",
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 155,
-      "angle": -75,
-      "locations": [38.5, -32]
+      "arc": 255,
+      "angle": 0,
+      "locations": [41.5, -0]
     },
     {
       "id": "WS0005",
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 200,
+      "arc": 240,
       "angle": 0,
-      "locations": [68.5, -0],
+      "locations": [113.5, -0],
       "renderOrderMod": 5
     },
     {
       "id": "WS0006",
       "size": "MEDIUM",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 220,
       "angle": 180,
-      "locations": [-71.5, -0]
+      "locations": [-64.5, -0]
     },
     {
       "id": "WS0007",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 155,
-      "angle": 90,
-      "locations": [1.5, 79]
+      "arc": 95,
+      "angle": 36,
+      "locations": [32.5, 33]
     },
     {
       "id": "WS0008",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 155,
-      "angle": -90,
-      "locations": [1.5, -79]
+      "arc": 95,
+      "angle": -36,
+      "locations": [32.5, -33]
     },
     {
       "id": "WS0009",
@@ -97,8 +97,8 @@
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 130,
-      "angle": 120.5,
-      "locations": [-40.5, 59]
+      "angle": 83.5,
+      "locations": [-22.5, 86]
     },
     {
       "id": "WS0010",
@@ -106,49 +106,49 @@
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 130,
-      "angle": -120.5,
-      "locations": [-40.5, -59]
+      "angle": -115.5,
+      "locations": [-66.5, -69]
     },
     {
       "id": "WS0012",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 210,
-      "angle": 0,
-      "locations": [121.5, -0]
+      "arc": 155,
+      "angle": -59.5,
+      "locations": [110.5, -38]
     },
     {
       "id": "WS0013",
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 245,
-      "angle": 180,
-      "locations": [-107.5, -0]
+      "arc": 130,
+      "angle": 115.5,
+      "locations": [-66.5, 69]
     },
     {
       "id": "WS0011",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 210,
-      "angle": 83.5,
-      "locations": [97.5, 18]
+      "arc": 155,
+      "angle": 59.5,
+      "locations": [110.5, 38]
     },
     {
       "id": "WS0014",
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 210,
+      "arc": 130,
       "angle": -83.5,
-      "locations": [97.5, -18]
+      "locations": [-22.5, -86]
     }
   ],
   "engineSlots": [
     {
-      "location": [-73.5, 44.5],
+      "location": [-120.5, 30],
       "length": 78,
       "width": 31,
       "angle": 180,
@@ -157,7 +157,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-73.5, -44.5],
+      "location": [-120.5, -30],
       "length": 78,
       "width": 31,
       "angle": -180,
@@ -166,7 +166,7 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-56, 74],
+      "location": [-104.5, 51],
       "length": 60,
       "width": 25,
       "angle": 180,
@@ -175,42 +175,59 @@
       "styleId": "LAKHESIS"
     },
     {
-      "location": [-56, -74],
+      "location": [-104.5, -51],
       "length": 60,
       "width": 25,
       "angle": -180,
       "contrailSize": 25,
+      "style": "CUSTOM",
+      "styleId": "LAKHESIS"
+    },
+    {
+      "location": [-134, -0],
+      "length": 108,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
       "style": "CUSTOM",
       "styleId": "LAKHESIS"
     }
   ],
   "bounds": [
-    -117, -11.5,
-    -100.5, -21.5,
-    -94.5, -18,
-    -73.5, -30,
-    -74, -50.5,
-    -58, -62,
-    -55.5, -77.5,
-    -14, -98,
-    3, -98.5,
-    63, -34.5,
-    80, -28,
-    108, -35,
-    138.5, -3,
-    138.5, 3,
-    108, 35,
-    80, 28,
-    63, 34.5,
-    3, 98.5,
-    -14, 98,
-    -55.5, 77.5,
-    -58, 62,
-    -74, 50.5,
-    -73.5, 30,
-    -94.5, 18,
-    -100.5, 21.5,
-    -117, 11.5,
-    -136.5, -0
+    -123, -16,
+    -129.5, -31,
+    -99.5, -66,
+    -98, -80,
+    -48.5, -88.5,
+    -41, -83.5,
+    -23.5, -102.5,
+    35, -73,
+    30.5, -50.5,
+    55.5, -28,
+    56, -38.5,
+    74.5, -27,
+    72, -39.5,
+    91, -25.5,
+    102, -67.5,
+    144, -10,
+    138, -4,
+    138, 4,
+    144, 10,
+    102, 67.5,
+    91, 25.5,
+    72, 39.5,
+    74.5, 27,
+    56, 38.5,
+    55.5, 28,
+    30.5, 50.5,
+    35, 73,
+    -23.5, 102.5,
+    -41, 83.5,
+    -48.5, 88.5,
+    -98, 80,
+    -99.5, 66,
+    -129.5, 31,
+    -123, 16,
+    -142.5, -0
   ]
 }

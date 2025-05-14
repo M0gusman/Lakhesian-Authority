@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.fs.starfarer.E.I;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
@@ -39,7 +38,7 @@ public class Lakhesis {
 		khyr.applySpecChanges();
 		khyr.setCustomDescriptionId("planet_khyr");
 		MarketAPI khyrMarketPlace = addMarketplace.addMarketplace(
-				"lakhesismonarchy",
+				"lakhesianauth",
 				khyr,
 				null,
 				"Khyr",
@@ -76,7 +75,7 @@ public class Lakhesis {
 
 
 		// Add a gate.
-		PlanetAPI arynha = system.addPlanet("arynha", lakhesis_star, "Arynha", "terran", 60, 190, 5000, 250);
+		PlanetAPI arynha = system.addPlanet("arynha", lakhesis_star, "Arynha", "terran", 60, 190, 6500, 250);
 		arynha.getSpec().setPitch( 190.0f);
 		arynha.getSpec().setPlanetColor(new Color(255,245,225,255));
 		arynha.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
@@ -85,7 +84,7 @@ public class Lakhesis {
 		arynha.applySpecChanges();
 		arynha.setCustomDescriptionId("planet_arynha");
 		MarketAPI arynhaMarketPlace = addMarketplace.addMarketplace(
-				"lakhesismonarchy",
+				"lakhesianauth",
 				arynha,
 				null,
 				"Arynha",
@@ -131,7 +130,7 @@ public class Lakhesis {
 		arynhaMarketPlace.getIndustry("heavybatteries").setAICoreId(Commodities.ALPHA_CORE);
 		arynhaMarketPlace.getIndustry("starfortress_high").setAICoreId(Commodities.ALPHA_CORE);
 		
-			PlanetAPI turin = system.addPlanet("turin", arynha, "Turin", "barren", 0, 50, 500, 30);
+			PlanetAPI turin = system.addPlanet("turin", arynha, "Turin", "barren", 0, 50, 1500, 30);
 		turin.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "barren03"));
 		turin.getSpec().setPlanetColor(new Color(235,255,245,255));
 		turin.getSpec().setPitch( 140.0f);
@@ -139,7 +138,7 @@ public class Lakhesis {
 		turin.setCustomDescriptionId("turin_planet");
 
 		MarketAPI turinMarketPlace = addMarketplace.addMarketplace(
-				"lakhesismonarchy",
+				"lakhesianauth",
 				turin,
 				null,
 				"Turin",
@@ -184,23 +183,23 @@ public class Lakhesis {
 			SectorEntityToken relay = system.addCustomEntity("lakhesis_relay", // unique id
 					 "Lakhesis Relay", // name - if null, defaultName from custom_entities.json will be used
 					 "comm_relay", // type of object, defined in custom_entities.json
-					 "lakhesismonarchy"); // faction
+					 "lakhesianauth"); // faction
 			relay.setCircularOrbitPointingDown(lakhesis_star, 60-60, 5000, 250);
 			
 			// L5
 			JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("arynha_jump", "Arynha Jump-point");
-			jumpPoint1.setCircularOrbit( arynha, 60+60, 5000, 250);
+			jumpPoint1.setCircularOrbit( arynha, 60+60, 2500, 250);
 			jumpPoint1.setRelatedPlanet(arynha);
 			system.addEntity(jumpPoint1);
 			
-		PlanetAPI girash = system.addPlanet("girash", lakhesis_star, "Girash", "gas_giant", 180, 220, 6500, 350);
+		PlanetAPI girash = system.addPlanet("girash", lakhesis_star, "Girash", "gas_giant", 180, 220, 8000, 350);
 		girash.getSpec().setPitch( 100.0f);
 		girash.getSpec().setPlanetColor(new Color(245,255,195,255));
 		girash.applySpecChanges();
 		girash.setCustomDescriptionId("girash_planet");
 
 		MarketAPI girashMarketPlace = addMarketplace.addMarketplace(
-				"lakhesismonarchy",
+				"lakhesianauth",
 				girash,
 				null,
 				"Girash",
@@ -246,14 +245,14 @@ public class Lakhesis {
 
 		system.addRingBand(girash, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 400, 30, Terrain.RING, null);
 		
-			PlanetAPI ilryan = system.addPlanet("ilryan", lakhesis_star, "Ilryan", "barren", 0, 100, 1500, 40);
+			PlanetAPI ilryan = system.addPlanet("ilryan", lakhesis_star, "Ilryan", "barren", 0, 100, 3000, 40);
 			ilryan.getSpec().setTilt( 190f );
 		    ilryan.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
 		    ilryan.getSpec().setGlowColor(new Color(250,225,195,255));
 		    ilryan.applySpecChanges();
 		    ilryan.setCustomDescriptionId("planet_ilryan");
 		MarketAPI ilryanMarketPlace = addMarketplace.addMarketplace(
-				"lakhesismonarchy",
+				"lakhesianauth",
 				ilryan,
 				null,
 				"Ilryan",
@@ -300,7 +299,7 @@ public class Lakhesis {
 		ilryanMarketPlace.getIndustry("starfortress_high").setAICoreId(Commodities.ALPHA_CORE);
 		ilryanMarketPlace.getIndustry("highcommand").setAICoreId(Commodities.ALPHA_CORE);
 
-			SectorEntityToken girash_loc = system.addCustomEntity(null, null, "sensor_array", "lakhesismonarchy");
+			SectorEntityToken girash_loc = system.addCustomEntity(null, null, "sensor_array", "lakhesianauth");
 			girash_loc.setCircularOrbitPointingDown(girash, 0 + 180, 1000, 40);
 			
 		// and have asteroids on the other side, too. - L5 is behind
