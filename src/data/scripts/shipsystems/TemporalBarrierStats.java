@@ -15,6 +15,7 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 	private static final float DAMAGE_BONUS_STEP = 400f;
 	private static final float DAMAGE_BONUS_EXTRA_MULT = 1.5f;
 	private static final float HIT_BONUS_EXTRA_MULT = 0.7f;
+	private static final float BONUS_DECAY_RATE = 0.4f;
 
 	private Float originalMass = null;
 	private static State previousState = State.IDLE;
@@ -78,7 +79,7 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 	}
 	public static class SystemDamageTakenBuffListener implements DamageTakenModifier, AdvanceableListener {
 		private float damageTaken = 0f;
-		private int hitsTaken = 0;
+		private float hitsTaken = 0f;
 		private ShipAPI ship;
 
 		SystemDamageTakenBuffListener(ShipAPI ship) {
@@ -88,6 +89,8 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 		@Override
 		public void advance(float amount) {
+			damageTaken -= damageTaken * BONUS_DECAY_RATE * amount;
+			hitsTaken -= hitsTaken * BONUS_DECAY_RATE * amount;
 		}
 
 		@Override
@@ -97,7 +100,7 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 			float dmg = (damage.getDamage()) * (param instanceof BeamAPI ? damage.getDpsDuration() : 1);
 
 			damageTaken += dmg;
-			hitsTaken++;
+			hitsTaken += 1;
 
 			return "";
 		}
@@ -165,6 +168,15 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 		if (index == 2) {
 			return new StatusData("Current mass: " + originalMass * 10f, false);
+		}
+
+		if (listener != null) {
+			if (index == 3) {
+				return new StatusData("damage Taken: " + listener.damageTaken, false);
+			}
+			if (index == 4) {
+				return new StatusData("hits Taken: " + listener.hitsTaken, false);
+			}
 		}
 
 		return null;
