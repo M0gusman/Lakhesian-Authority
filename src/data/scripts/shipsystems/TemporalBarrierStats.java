@@ -7,14 +7,12 @@ import com.fs.starfarer.api.combat.listeners.DamageTakenModifier;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.lwjgl.util.vector.Vector2f;
 
-
 public class TemporalBarrierStats extends BaseShipSystemScript {
 
 	public static final float DAMAGE_MULT = 99f;
 	private static final float DURATION = 5f;
 	private static final float DAMAGE_FOR_MAX_BONUS = 8000f;
 	private static final float DAMAGE_BONUS_STEP = 400f;
-	private static final float BONUS_MULT_STEP = 2.5f;
 	private static final float DAMAGE_BONUS_EXTRA_MULT = 1.5f;
 	private static final float HIT_BONUS_EXTRA_MULT = 0.7f;
 
@@ -23,9 +21,23 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 	private static float lastActivationTime = 0f;
 
 	private SystemDamageTakenBuffListener listener;
+	private ShipAPI ship;
+
+	private static float getBonusMultStep(ShipAPI ship) {
+		if (ship == null) {
+			return 0f;
+		}
+
+		return  switch (ship.getHullSize()) {
+			case DEFAULT, FIGHTER -> 0.25f;
+            case FRIGATE -> 2.5f;
+			case DESTROYER -> 3f;
+			case CRUISER -> 3.5f;
+			case CAPITAL_SHIP -> 4f;
+		};
+	}
 
 	public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
-		ShipAPI ship;
 		if (stats.getEntity() instanceof ShipAPI) {
 			ship = (ShipAPI) stats.getEntity();
 		} else {
@@ -34,7 +46,7 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 
 		if (!ship.hasListenerOfClass(SystemDamageTakenBuffListener.class)) {
-			listener = new SystemDamageTakenBuffListener();
+			listener = new SystemDamageTakenBuffListener(ship);
 			ship.addListener(listener);
 		}
 
@@ -67,6 +79,12 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 	public static class SystemDamageTakenBuffListener implements DamageTakenModifier, AdvanceableListener {
 		private float damageTaken = 0f;
 		private int hitsTaken = 0;
+		private ShipAPI ship;
+
+		SystemDamageTakenBuffListener(ShipAPI ship) {
+			this.ship = ship;
+		}
+
 
 		@Override
 		public void advance(float amount) {
@@ -89,13 +107,13 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 		}
 
 		public float GetBonusMult() {
-			float damageMult = Math.min((int) damageTaken / (int) DAMAGE_BONUS_STEP, (int) DAMAGE_FOR_MAX_BONUS / (int) DAMAGE_BONUS_STEP ) * DAMAGE_BONUS_EXTRA_MULT * BONUS_MULT_STEP;
-			float hitsMult = hitsTaken * BONUS_MULT_STEP * HIT_BONUS_EXTRA_MULT;
+			float damageMult = Math.min((int) damageTaken / (int) DAMAGE_BONUS_STEP, (int) DAMAGE_FOR_MAX_BONUS / (int) DAMAGE_BONUS_STEP ) * DAMAGE_BONUS_EXTRA_MULT * getBonusMultStep(ship);
+			float hitsMult = hitsTaken * getBonusMultStep(ship) * HIT_BONUS_EXTRA_MULT;
 
 			return damageMult + hitsMult;
 		}
 	}
-	
+
 	public void unapply(MutableShipStatsAPI stats, String id) {
 		ShipAPI ship = (ShipAPI)stats.getEntity();
 		if(ship == null){
