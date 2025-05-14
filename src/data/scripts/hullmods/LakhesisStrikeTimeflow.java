@@ -83,21 +83,22 @@ public class LakhesisStrikeTimeflow extends BaseHullMod {
 
    @Override
    public void advanceInCombat(ShipAPI ship, float amount) {
-       float velocityBonus =  ship.getVelocity().length();
-       float Limit = TimeMultLimit;
+       if(ship.isAlive()) {
+           float velocityBonus = ship.getVelocity().length();
+           float Limit = TimeMultLimit;
 
-       afterimgint.advance(amount);
-       if(afterimgint.intervalElapsed()){
-           renderCustomAfterimage(ship, new Color(255, 255, 255, 40), 1f);
+           afterimgint.advance(amount);
+           if (afterimgint.intervalElapsed()) {
+               renderCustomAfterimage(ship, new Color(255, 255, 255, 40), 1f);
+           }
+           if (ship.getSystem().isActive()) {
+               Limit = TimeMultLimit * 2.5f;
+               velocityBonus = velocityBonus * 2.5f;
+           }
+           ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.round(Math.min(Limit, velocityBonus * hullsize.get(ship.getHullSize()))));
+
+           Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY1, "graphics/icons/hullsys/temporal_shell.png", "Chronodrive", "Current Timeflow Increase: " + Math.round(Math.min(Limit, velocityBonus * hullsize.get(ship.getHullSize()))) + "%", false);
        }
-       if(ship.getSystem().isActive()){
-           Limit = TimeMultLimit*2.5f;
-           velocityBonus = velocityBonus*2.5f;
-       }
-       ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.round(Math.min(Limit, velocityBonus * hullsize.get(ship.getHullSize()))));
-
-       Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY1, "graphics/icons/hullsys/temporal_shell.png", "Chronodrive", "Current Timeflow Increase: " + Math.round(Math.min(Limit, velocityBonus * hullsize.get(ship.getHullSize()))) + "%", false);
-
     }
     public String getDescriptionParam(int index, HullSize hullSize) {
         //if (index == 0) return "" + (int)RANGE_PENALTY_PERCENT + "%";

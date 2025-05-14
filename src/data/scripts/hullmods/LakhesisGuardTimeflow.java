@@ -86,47 +86,46 @@ public class LakhesisGuardTimeflow  extends BaseHullMod {
     }
     public float TimeMultLimit = 300f;
     float DmgredBonus =  10f;
-    public float DmgRedLimit = 40f;
+    public float DmgRedLimit = 20f;
     public float TimeMultLowerLimit = 100f;
     IntervalUtil afterimgint = new IntervalUtil(0.5f, 1f);
 
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
-        float Limit = TimeMultLimit;
-        float Hullscaling = hullsize.get(ship.getHullSize());
-        float RedBonus =  DmgredBonus;
-        float TimeBonus = RedBonus;
+        if(ship.isAlive()) {
+            float Limit = TimeMultLimit;
+            float Hullscaling = hullsize.get(ship.getHullSize());
+            float RedBonus = DmgredBonus;
+            float TimeBonus = RedBonus;
 
-        afterimgint.advance(amount);
-        if(afterimgint.intervalElapsed()){
-            renderCustomAfterimage(ship, new Color(255, 255, 255, 40), 1f);
+            afterimgint.advance(amount);
+            if (afterimgint.intervalElapsed()) {
+                renderCustomAfterimage(ship, new Color(255, 255, 255, 40), 1f);
+            }
+            DamageTakenBuffListener listener;
+            if (!ship.hasListenerOfClass(DamageTakenBuffListener.class)) {
+                listener = new DamageTakenBuffListener();
+                ship.addListener(listener);
+            } else {
+                listener = ship.getListeners(DamageTakenBuffListener.class).get(0);
+            }
+            float bonus = 10f * listener.GetBonusScale();
+            float FinalBonus = RedBonus + (bonus * Hullscaling);
+            TimeBonus = FinalBonus;
+            if (ship.getSystem().isActive()) {
+                TimeBonus = 0f;
+                FinalBonus = 0f;
+            }
+
+
+            ship.getMutableStats().getArmorDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
+            ship.getMutableStats().getShieldDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
+            ship.getMutableStats().getHullDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
+            ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.max(TimeMultLowerLimit, Math.min(Limit, TimeBonus * 2f)));
+
+            Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY1, "graphics/icons/hullsys/temporal_shell.png", "Chronodrive", "Current Timeflow Increase: " + Math.round(Math.max(0f, Math.min(Limit, TimeBonus * 3f))) + "%", false);
+            Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY2, "graphics/icons/hullsys/damper_field.png", "Chronodrive - Defense Field", "Current Damage Reduction: " + Math.round(Math.min(DmgRedLimit, FinalBonus)) + "%", false);
         }
-        DamageTakenBuffListener listener;
-        if (!ship.hasListenerOfClass(DamageTakenBuffListener.class)) {
-            listener = new DamageTakenBuffListener();
-            ship.addListener(listener);
-        } else {
-            listener = ship.getListeners(DamageTakenBuffListener.class).get(0);
-        }
-        float bonus = 10f * listener.GetBonusScale();
-        float FinalBonus = RedBonus + (bonus*Hullscaling);
-        TimeBonus = FinalBonus;
-        if(ship.getSystem().isActive()){
-            Limit *= 1.5f;
-            Hullscaling *= 1.5f;
-            TimeBonus = TemporalBarrierStats.DAMAGE_MULT;
-            FinalBonus = 0f;
-        }
-
-
-        ship.getMutableStats().getArmorDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
-        ship.getMutableStats().getShieldDamageTakenMult().modifyPercent(spec.getId(),-Math.min(DmgRedLimit, FinalBonus));
-        ship.getMutableStats().getHullDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
-        //ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.max(TimeMultLowerLimit, Math.min( Limit, TimeBonus*2f)));
-
-        Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY1, "graphics/icons/hullsys/temporal_shell.png", "Chronodrive", "Current Timeflow Increase: " + Math.round(Math.max(0f, Math.min(Limit, TimeBonus*3f))) + "%", false);
-        Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY2, "graphics/icons/hullsys/damper_field.png", "Chronodrive - Defense Field", "Current Damage Reduction: " + Math.round(Math.min(DmgRedLimit, FinalBonus)) + "%", false);
-
     }
 
     //listener, by Ruddygreat

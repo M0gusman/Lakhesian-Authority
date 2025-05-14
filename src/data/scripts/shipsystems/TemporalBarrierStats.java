@@ -6,16 +6,16 @@ import com.fs.starfarer.api.combat.listeners.AdvanceableListener;
 import com.fs.starfarer.api.combat.listeners.DamageTakenModifier;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.lwjgl.util.vector.Vector2f;
-
+//Written by CombustibleLemon
 public class TemporalBarrierStats extends BaseShipSystemScript {
 
 	public static final float DAMAGE_MULT = 99f;
 	private static final float DURATION = 5f;
 	private static final float DAMAGE_FOR_MAX_BONUS = 8000f;
 	private static final float DAMAGE_BONUS_STEP = 400f;
-	private static final float DAMAGE_BONUS_EXTRA_MULT = 1.5f;
-	private static final float HIT_BONUS_EXTRA_MULT = 0.7f;
-	private static final float BONUS_DECAY_RATE = 0.4f;
+	private static final float DAMAGE_BONUS_EXTRA_MULT = 1f;
+	private static final float HIT_BONUS_EXTRA_MULT = 0.4f;
+	private static final float BONUS_DECAY_RATE = 0.5f;
 
 	private Float originalMass = null;
 	private static State previousState = State.IDLE;
@@ -31,10 +31,10 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 		return  switch (ship.getHullSize()) {
 			case DEFAULT, FIGHTER -> 0.25f;
-            case FRIGATE -> 2.5f;
-			case DESTROYER -> 3f;
-			case CRUISER -> 3.5f;
-			case CAPITAL_SHIP -> 4f;
+            case FRIGATE -> 0.5f;
+			case DESTROYER -> 1f;
+			case CRUISER -> 1.5f;
+			case CAPITAL_SHIP -> 2f;
 		};
 	}
 
@@ -73,9 +73,14 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 		float calculatedDamageMult = calculateDamageMult();
 
+		stats.getTimeMult().modifyPercent(id, calculatedDamageMult*3f);
 		stats.getShieldDamageTakenMult().modifyPercent(id, 1f - calculatedDamageMult);
 		stats.getArmorDamageTakenMult().modifyPercent(id, 1f - calculatedDamageMult);
 		stats.getHullDamageTakenMult().modifyPercent(id, 1f - calculatedDamageMult);
+		stats.getMaxSpeed().modifyPercent(id, -75f);
+		stats.getAcceleration().modifyPercent(id,-75f);
+		stats.getMaxTurnRate().modifyPercent(id, -75f);
+		stats.getTurnAcceleration().modifyPercent(id, -75f);
 	}
 	public static class SystemDamageTakenBuffListener implements DamageTakenModifier, AdvanceableListener {
 		private float damageTaken = 0f;
@@ -138,6 +143,7 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 		previousState = State.IDLE;
 		//stats.getShieldAbsorptionMult().unmodify(id);
+		stats.getTimeMult().unmodify(id);
 		stats.getShieldArcBonus().unmodify(id);
 		stats.getShieldDamageTakenMult().unmodify(id);
 		stats.getShieldTurnRateMult().unmodify(id);
@@ -146,6 +152,10 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 		stats.getHullDamageTakenMult().unmodify(id);
 		stats.getArmorDamageTakenMult().unmodify(id);
 		stats.getShieldUpkeepMult().unmodify(id);
+		stats.getMaxSpeed().unmodify(id);
+		stats.getAcceleration().unmodify(id);
+		stats.getMaxTurnRate().unmodify(id);
+		stats.getTurnAcceleration().unmodify(id);
 	}
 
 	public float calculateDamageMult() {
@@ -163,21 +173,27 @@ public class TemporalBarrierStats extends BaseShipSystemScript {
 
 	public StatusData getStatusData(int index, State state, float effectLevel) {
 		if (index == 0) {
-			return new StatusData("current damage reduction: " + calculateDamageMult(), false);
+			return new StatusData("current damage reduction: " + calculateDamageMult()*3f, false);
 		}
 
 		if (index == 2) {
 			return new StatusData("Current mass: " + originalMass * 10f, false);
 		}
+		if (index == 3) {
+			return new StatusData("Current timeflow: " + calculateDamageMult(), false);
+		}
+		if(index == 4){
+			return new StatusData("Mobility reduced by 75%", true);
+		}
 
-		if (listener != null) {
+		/*if (listener != null) {
 			if (index == 3) {
 				return new StatusData("damage Taken: " + listener.damageTaken, false);
 			}
 			if (index == 4) {
 				return new StatusData("hits Taken: " + listener.hitsTaken, false);
 			}
-		}
+		}*/
 
 		return null;
 	}
