@@ -73,10 +73,10 @@ public class LakhesisStrikeTimeflow extends BaseHullMod {
     static {
         hullsize.put(HullSize.DEFAULT, 0.25f);
         hullsize.put(HullSize.FIGHTER, 0.25f);
-        hullsize.put(ShipAPI.HullSize.FRIGATE, 0.25f);
-        hullsize.put(ShipAPI.HullSize.DESTROYER, 0.5f);
-        hullsize.put(ShipAPI.HullSize.CRUISER, 0.75f);
-        hullsize.put(ShipAPI.HullSize.CAPITAL_SHIP, 1f);
+        hullsize.put(ShipAPI.HullSize.FRIGATE, 0.5f);
+        hullsize.put(ShipAPI.HullSize.DESTROYER, 0.75f);
+        hullsize.put(ShipAPI.HullSize.CRUISER, 1.25f);
+        hullsize.put(ShipAPI.HullSize.CAPITAL_SHIP, 1.5f);
     }
    public float TimeMultLimit = 300f;
    IntervalUtil afterimgint = new IntervalUtil(0.5f, 1f);

@@ -121,7 +121,7 @@ public class LakhesisGuardTimeflow  extends BaseHullMod {
             ship.getMutableStats().getArmorDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
             ship.getMutableStats().getShieldDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
             ship.getMutableStats().getHullDamageTakenMult().modifyPercent(spec.getId(), -Math.min(DmgRedLimit, FinalBonus));
-            ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.max(TimeMultLowerLimit, Math.min(Limit, TimeBonus * 2f)));
+            ship.getMutableStats().getTimeMult().modifyPercent(spec.getId(), Math.max(TimeMultLowerLimit, Math.min(Limit, TimeBonus * 3f)));
 
             Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY1, "graphics/icons/hullsys/temporal_shell.png", "Chronodrive", "Current Timeflow Increase: " + Math.round(Math.max(0f, Math.min(Limit, TimeBonus * 3f))) + "%", false);
             Global.getCombatEngine().maintainStatusForPlayerShip(STATUS_KEY2, "graphics/icons/hullsys/damper_field.png", "Chronodrive - Defense Field", "Current Damage Reduction: " + Math.round(Math.min(DmgRedLimit, FinalBonus)) + "%", false);
@@ -228,7 +228,7 @@ public class LakhesisGuardTimeflow  extends BaseHullMod {
 
         tooltip.beginTable(Misc.getBasePlayerColor(), Misc.getDarkPlayerColor(), Misc.getBrightPlayerColor(),
                 20f, true, true,
-                new Object [] {"Ship size", col1W, "Acceleration and dmg. red. effect", lastW});
+                new Object [] {"Ship size", col1W, "Dmg. red. effect", lastW});
 
         Color reallyG = g;
         if (Global.CODEX_TOOLTIP_MODE) {
@@ -254,13 +254,14 @@ public class LakhesisGuardTimeflow  extends BaseHullMod {
                 Alignment.MID, c, "+" + (float) hullsize.get(HullSize.CAPITAL_SHIP) + "% every 400 points of damage taken");
 
         tooltip.addTable("", 0, opad);
-        tooltip.addPara("Hits also increase the effects by half the listed effects for all hull sizes.", opad, h, "half");
+        tooltip.addPara("Timeflow is accelerated by 3x the listed effects", opad, h, "3x");
+        tooltip.addPara("Hits also increase damage reduction and timeflow by half the gain rate of both for all hull sizes.", opad, h, "half");
         tooltip.addPara("The temporal acceleration bonus is capped at 3x for all hull sizes.", opad, h, "3x");
         tooltip.addPara("The damage reduction bonus is capped at 40%% for all hull sizes.", opad, h, "40%");
 
         tooltip.addSectionHeading("Chronodrive Overcharge", Alignment.MID, opad + 7f);
 
-        tooltip.addPara("Increases timeflow bonus limit and gain by 2.5x on system activation.", opad, h, "2.5x");
+        tooltip.addPara("The hullmod effects are supplanted by the system's (reduced to zero) on system activation.", opad, h, "reduced to zero");
 
     }
 
